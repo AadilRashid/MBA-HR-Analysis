@@ -4,110 +4,30 @@
     <meta charset="UTF-8">
     <title>HR Analytics — Lecture 2: HR Metrics</title>
     <style>
-        @media print {
-            @page { margin: 0.4in; }
-            body { font-size: 9.5pt; }
-        }
-        body {
-            font-family: 'Courier New', monospace;
-            max-width: 100%;
-            margin: 0;
-            padding: 12px;
-            line-height: 1.35;
-            font-size: 9.5pt;
-            color: #000;
-            background: #fff;
-        }
-        h1 {
-            text-align: center;
-            font-size: 15pt;
-            margin: 0 0 5px 0;
-            border-bottom: 2px solid #000;
-            padding-bottom: 4px;
-        }
-        h2 {
-            font-size: 11pt;
-            margin: 10px 0 4px 0;
-            border-bottom: 1px solid #000;
-            padding-bottom: 2px;
-        }
-        h3 {
-            font-size: 10pt;
-            margin: 6px 0 3px 0;
-            text-decoration: underline;
-        }
-        .columns {
-            column-count: 2;
-            column-gap: 20px;
-        }
-        pre {
-            background: #fff;
-            border: 1px solid #000;
-            padding: 6px;
-            font-size: 8pt;
-            margin: 4px 0;
-            white-space: pre-wrap;
-            break-inside: avoid;
-            color: #000;
-        }
-        .block {
-            break-inside: avoid;
-            margin-bottom: 10px;
-        }
-        .label {
-            font-weight: bold;
-            font-size: 10pt;
-        }
-        .note {
-            border-left: 3px solid #000;
-            padding: 3px 6px;
-            margin: 4px 0;
-            font-size: 8.5pt;
-            color: #000;
-        }
-        .box {
-            border: 1px dashed #000;
-            padding: 5px;
-            margin: 4px 0;
-            font-size: 8pt;
-            color: #000;
-        }
-        .ask {
-            border: 1px solid #000;
-            padding: 4px 8px;
-            margin: 4px 0;
-            font-size: 8.5pt;
-            background: #f5f5f5;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 8.5pt;
-            margin: 4px 0;
-        }
-        th {
-            border: 1px solid #000;
-            padding: 3px 5px;
-            background: #e0e0e0;
-            text-align: left;
-        }
-        td {
-            border: 1px solid #000;
-            padding: 3px 5px;
-        }
-        p { margin: 2px 0; color: #000; }
-        ul { margin: 3px 0; padding-left: 16px; color: #000; }
-        li { margin: 2px 0; }
+        @media print { @page { margin: 0.4in; } body { font-size: 9.5pt; } }
+        body { font-family: 'Courier New', monospace; max-width: 100%; margin: 0; padding: 12px; line-height: 1.35; font-size: 9.5pt; color: #000; background: #fff; }
+        h1 { text-align: center; font-size: 15pt; margin: 0 0 5px 0; border-bottom: 2px solid #000; padding-bottom: 4px; }
+        h2 { font-size: 11pt; margin: 10px 0 4px 0; border-bottom: 1px solid #000; padding-bottom: 2px; }
+        h3 { font-size: 10pt; margin: 6px 0 3px 0; text-decoration: underline; }
+        .columns { column-count: 2; column-gap: 20px; }
+        pre { background: #fff; border: 1px solid #000; padding: 6px; font-size: 8pt; margin: 4px 0; white-space: pre-wrap; break-inside: avoid; color: #000; }
+        .block { break-inside: avoid; margin-bottom: 10px; }
+        .note { border-left: 3px solid #000; padding: 3px 6px; margin: 4px 0; font-size: 8.5pt; }
+        .summary { border: 2px solid #000; padding: 8px; margin: 10px 0; break-inside: avoid; }
+        table { width: 100%; border-collapse: collapse; font-size: 8.5pt; margin: 4px 0; }
+        th { border: 1px solid #000; padding: 3px 5px; background: #e0e0e0; text-align: left; }
+        td { border: 1px solid #000; padding: 3px 5px; }
+        p { margin: 2px 0; } ul { margin: 3px 0; padding-left: 16px; } li { margin: 2px 0; }
     </style>
 </head>
 <body>
 
 <h1>HR Analytics — Lecture 2: HR Metrics &amp; Measurement</h1>
 <p style="text-align:center; font-size:9pt; margin-bottom:8px;">
-    Teacher's Notes · Core Metrics · Context Problem · Metrics vs Analytics · KashmirTech Dataset
+    Core HR Metrics · Formulas · Context Problem · Metrics vs Analytics · KashmirTech Dataset
 </p>
 
-<!-- ===== FORMAL DEFINITIONS ===== -->
+<!-- FORMAL DEFINITIONS -->
 <div style="border:2px solid #000; padding:8px; margin-bottom:10px;">
 <h2 style="margin-top:0; border-bottom:1px solid #000;">Formal Definitions</h2>
 <div style="column-count:2; column-gap:20px;">
@@ -157,105 +77,81 @@
 
 <div class="columns">
 
-<!-- ===== RECAP ===== -->
+<!-- DATA vs METRIC -->
 <div class="block">
-<h2>Recap from Lecture 1 (5 min)</h2>
-<div class="ask">ASK: "Last class we said a number without context is not an insight. Give me an example from your own organization."</div>
-<pre>Remind them:
-DATA → INFORMATION → INSIGHT → DECISION
-Today we go deeper into the METRIC step.</pre>
-</div>
-
-<!-- ===== WHAT IS A METRIC ===== -->
-<div class="block">
-<h2>Part 1 — What is a Metric? (10 min)</h2>
-<p><b>Definition:</b> A quantifiable measure used to track and assess the status of a specific process or outcome.</p>
+<h2>Data vs. Metric</h2>
+<p>A metric gives data meaning by putting it in relation to a total, a time period, or a benchmark.</p>
 <table>
     <tr><th>Data</th><th>Metric</th></tr>
     <tr><td>50 employees left this year</td><td>10% attrition rate</td></tr>
     <tr><td>30 days to fill a vacancy</td><td>30 days avg time-to-hire</td></tr>
     <tr><td>Training cost Rs. 5,00,000</td><td>Rs. 1,000 cost per employee</td></tr>
 </table>
-<div class="note">A metric gives data meaning by putting it in relation to something — a total, a time period, a benchmark.</div>
 </div>
 
-<!-- ===== CORE METRICS ===== -->
+<!-- CORE METRICS -->
 <div class="block">
-<h2>Part 2 — Core HR Metrics (20 min)</h2>
+<h2>Core HR Metric Formulas</h2>
 
-<h3>1. Attrition / Turnover Rate</h3>
+<h3>1. Attrition Rate</h3>
 <pre>Attrition Rate =
   (Employees who left / Avg headcount) × 100
 
-Example:
-  50 left, avg headcount = 500
+Example: 50 left, avg headcount = 500
   = (50/500) × 100 = 10%</pre>
-<div class="ask">ASK: "Is 10% good or bad?" → Revisit Lecture 1: context matters.</div>
 
 <h3>2. Time to Hire</h3>
 <pre>Time to Hire =
   Date of offer acceptance − Date job posted
 
-Benchmark: typically 20–40 days
-Why it matters: long time = lost productivity,
-candidate drop-off, business disruption.</pre>
+Benchmark: typically 20–40 days</pre>
 
 <h3>3. Cost per Hire</h3>
 <pre>Cost per Hire =
   (Internal + External recruiting costs)
   / Total hires
 
-Components: job ads, recruiter salaries,
+Includes: job ads, recruiter salaries,
 interview time, background checks, onboarding.</pre>
 
 <h3>4. Absenteeism Rate</h3>
 <pre>Absenteeism Rate =
-  (Days absent / Total working days) × 100
-
-High rate signals: low engagement,
-health issues, management problems.</pre>
+  (Days absent / Total working days) × 100</pre>
 
 <h3>5. Training Cost per Employee</h3>
 <pre>Training Cost per Employee =
-  Total training expenditure
-  / Employees trained</pre>
+  Total training expenditure / Employees trained</pre>
 
 <h3>6. Revenue per Employee</h3>
 <pre>Revenue per Employee =
-  Total revenue / Total employees
-
-Measures workforce productivity at org level.</pre>
+  Total revenue / Total employees</pre>
 
 <h3>7. Offer Acceptance Rate</h3>
 <pre>Offer Acceptance Rate =
-  (Offers accepted / Offers made) × 100
-
-Low rate signals: compensation issues,
-poor candidate experience, employer brand.</pre>
+  (Offers accepted / Offers made) × 100</pre>
 </div>
 
-<!-- ===== CONTEXT PROBLEM ===== -->
+<!-- CONTEXT PROBLEM -->
 <div class="block">
-<h2>Part 3 — The Context Problem (10 min)</h2>
-<pre>METRIC ALONE          vs.    METRIC IN CONTEXT
+<h2>The Context Problem</h2>
+<pre>METRIC ALONE       vs.    METRIC IN CONTEXT
 
-Attrition = 10%              Attrition = 10%
-                             Industry avg = 15%
-                             → BETTER than average
+Attrition = 10%           Attrition = 10%
+                          Industry avg = 15%
+                          → BETTER than average
 
-Attrition = 10%              Attrition = 10%
-                             Last year = 5%
-                             → Getting WORSE</pre>
+Attrition = 10%           Attrition = 10%
+                          Last year = 5%
+                          → Getting WORSE</pre>
 <p><b>Every metric needs at least one of:</b></p>
 <pre>1. Benchmark — vs. industry / competitors
 2. Trend     — vs. last period
 3. Target    — vs. our goal</pre>
-<div class="note">A metric without context is just a number. This is the same lesson from Lecture 1 — reinforce it here.</div>
 </div>
 
-<!-- ===== METRICS vs ANALYTICS ===== -->
+<!-- METRICS vs ANALYTICS -->
 <div class="block">
-<h2>Part 4 — Metrics vs. Analytics (10 min)</h2>
+<h2>Metrics vs. Analytics</h2>
 <table>
     <tr><th>Metrics</th><th>Analytics</th></tr>
     <tr><td>Describe what happened</td><td>Explain why it happened</td></tr>
@@ -263,15 +159,13 @@ Attrition = 10%              Attrition = 10%
     <tr><td>Single number</td><td>Pattern across variables</td></tr>
     <tr><td>10% attrition</td><td>Attrition highest among 25–30 yr olds with &lt;2 yrs tenure in Sales</td></tr>
 </table>
-<div class="ask">ASK: "Your HR dashboard shows attrition jumped from 8% to 15% this quarter. Is that metrics or analytics?"<br>
-Answer: Metrics (descriptive). Analytics = finding out WHY it jumped.</div>
+<div class="note">Metrics tell you WHAT. Analytics tells you WHY and WHAT NEXT.</div>
 </div>
 
-<!-- ===== DATASET ===== -->
+<!-- KASHMIR TECH DATASET -->
 <div class="block">
-<h2>Part 5 — KashmirTech Dataset (10 min)</h2>
-<p>Introduce the fictional company used all semester:</p>
-<pre>Company:  KashmirTech Solutions
+<h2>KashmirTech Dataset</h2>
+<pre>Company:   KashmirTech Solutions
 Employees: 500
 Industry:  Technology / Services
 Location:  India</pre>
@@ -292,107 +186,14 @@ Location:  India</pre>
     <tr><td>Promoted_Last_2_Years</td><td>Yes / No</td></tr>
     <tr><td>Attrition</td><td>Yes / No (left the company)</td></tr>
 </table>
-<div class="note">Tell students: "By the end of this course you will be able to predict which employees are likely to leave — before they leave."</div>
+<div class="note">This dataset is used across all 6 lectures. Same data, increasing analytical complexity each week.</div>
 </div>
 
-<!-- ===== IN-CLASS EXERCISE ===== -->
+<!-- RECOMMENDED READING -->
 <div class="block">
-<h2>In-Class Exercise (15 min)</h2>
-<div class="box">
-Using the KashmirTech dataset:<br><br>
-1. How many employees are in each department?<br>
-2. What is the overall attrition rate?<br>
-3. Which department has the highest attrition?<br>
-4. What is the average salary?<br>
-5. What additional information would you need to explain the attrition difference between departments?
-</div>
-<div class="note">Question 5 is the most important. It teaches students to think beyond the number — the core analytics mindset.</div>
-</div>
-
-<!-- ===== BOARD SUMMARY ===== -->
-<div class="block">
-<h2>What to Write on the Board</h2>
-<pre>HR METRICS
-
-METRIC = Data + Context + Meaning
-
-KEY METRICS:
-- Attrition Rate
-- Time to Hire
-- Cost per Hire
-- Absenteeism Rate
-- Training Cost per Employee
-- Revenue per Employee
-
-METRIC NEEDS:
-1. Benchmark (vs. industry)
-2. Trend     (vs. last period)
-3. Target    (vs. our goal)
-
-METRICS ≠ ANALYTICS
-Metrics  = WHAT
-Analytics = WHY + WHAT NEXT</pre>
-</div>
-
-<!-- ===== MISCONCEPTIONS ===== -->
-<div class="block">
-<h2>Common Misconceptions to Address</h2>
-<pre>✗ "High attrition is always bad"
-  → Some attrition is healthy (removing poor
-    performers). The question is: WHO is leaving?
-
-✗ "More metrics = better HR"
-  → Too many metrics create noise. Focus on
-    metrics that connect to business outcomes.
-
-✗ "HR metrics are only for HR"
-  → Revenue per employee, cost per hire, and
-    attrition directly affect business performance
-    and should be reported to the CEO.</pre>
-</div>
-
-<!-- ===== QUESTIONS FOR MBA ===== -->
-<div class="block">
-<h2>Questions to Ask MBA Students</h2>
-<ul>
-    <li>"Which of these metrics does your organization currently track?"</li>
-    <li>"If you could only track 3 HR metrics, which would you choose and why?"</li>
-    <li>"How would you explain attrition rate to a CEO with no HR background?"</li>
-</ul>
-</div>
-
-<!-- ===== STUDENT NOTES ===== -->
-<div class="block">
-<h2>Student Notes (Exam Version)</h2>
-<pre>HR Metric = a quantifiable measure used to
-track HR processes and outcomes.
-
-Key Formulas:
-Attrition Rate =
-  (Leavers / Avg headcount) × 100
-
-Time to Hire =
-  Offer date − Job posting date
-
-Cost per Hire =
-  Total recruiting costs / Total hires
-
-Absenteeism Rate =
-  (Days absent / Total working days) × 100
-
-Every metric needs context:
-  benchmark, trend, or target.
-
-Metrics vs. Analytics:
-  Metrics  → WHAT happened
-  Analytics → WHY + WHAT NEXT</pre>
-</div>
-
-<!-- ===== BOOK CONNECTIONS ===== -->
-<div class="block">
-<h2>Book Connections</h2>
+<h2>Recommended Reading</h2>
 <table>
-    <tr><th>Point in Class</th><th>Read More</th></tr>
+    <tr><th>Topic</th><th>Source</th></tr>
     <tr><td>HR metrics definitions</td><td>Yadav &amp; Maheshwari, Ch. 2</td></tr>
     <tr><td>Human capital measurement</td><td>Gene Pease et al., Ch. 3–4</td></tr>
     <tr><td>Linking HR to business outcomes</td><td>Fitz-enz &amp; Mattox, Ch. 2</td></tr>
@@ -400,13 +201,42 @@ Metrics vs. Analytics:
 </table>
 </div>
 
-<!-- ===== NEXT LECTURE ===== -->
-<div class="block">
-<h2>Next Lecture Preview</h2>
-<div class="note">Tell students: "Next class we move from metrics to descriptive analytics — we will start exploring patterns in the KashmirTech dataset. Come prepared to work with data."</div>
-</div>
-
 </div><!-- end columns -->
+
+<!-- KEY SUMMARY -->
+<div class="summary">
+<h2 style="margin-top:0; border-bottom:1px solid #000;">Lecture 2 — Key Summary</h2>
+<div style="column-count:2; column-gap:20px;">
+<div>
+<pre>HR Metric = a quantifiable measure used to
+track HR processes and outcomes.
+
+Key Formulas:
+Attrition Rate =
+  (Leavers / Avg headcount) × 100
+Time to Hire =
+  Offer date − Job posting date
+Cost per Hire =
+  Total recruiting costs / Total hires
+Absenteeism Rate =
+  (Days absent / Total working days) × 100</pre>
+</div>
+<div>
+<pre>Every metric needs context:
+  1. Benchmark (vs. industry)
+  2. Trend     (vs. last period)
+  3. Target    (vs. our goal)
+
+Metrics vs. Analytics:
+  Metrics   → WHAT happened
+  Analytics → WHY + WHAT NEXT
+
+Next Lecture: Descriptive Analytics
+— exploring patterns in the KashmirTech
+  dataset using Excel.</pre>
+</div>
+</div>
+</div>
 
 </body>
 </html>

@@ -4,110 +4,30 @@
     <meta charset="UTF-8">
     <title>HR Analytics — Lecture 1: Introduction</title>
     <style>
-        @media print {
-            @page { margin: 0.4in; }
-            body { font-size: 9.5pt; }
-        }
-        body {
-            font-family: 'Courier New', monospace;
-            max-width: 100%;
-            margin: 0;
-            padding: 12px;
-            line-height: 1.35;
-            font-size: 9.5pt;
-            color: #000;
-            background: #fff;
-        }
-        h1 {
-            text-align: center;
-            font-size: 15pt;
-            margin: 0 0 5px 0;
-            border-bottom: 2px solid #000;
-            padding-bottom: 4px;
-        }
-        h2 {
-            font-size: 11pt;
-            margin: 10px 0 4px 0;
-            border-bottom: 1px solid #000;
-            padding-bottom: 2px;
-        }
-        h3 {
-            font-size: 10pt;
-            margin: 6px 0 3px 0;
-            text-decoration: underline;
-        }
-        .columns {
-            column-count: 2;
-            column-gap: 20px;
-        }
-        pre {
-            background: #fff;
-            border: 1px solid #000;
-            padding: 6px;
-            font-size: 8pt;
-            margin: 4px 0;
-            white-space: pre-wrap;
-            break-inside: avoid;
-            color: #000;
-        }
-        .block {
-            break-inside: avoid;
-            margin-bottom: 10px;
-        }
-        .label {
-            font-weight: bold;
-            font-size: 10pt;
-        }
-        .note {
-            border-left: 3px solid #000;
-            padding: 3px 6px;
-            margin: 4px 0;
-            font-size: 8.5pt;
-            color: #000;
-        }
-        .box {
-            border: 1px dashed #000;
-            padding: 5px;
-            margin: 4px 0;
-            font-size: 8pt;
-            color: #000;
-        }
-        .ask {
-            border: 1px solid #000;
-            padding: 4px 8px;
-            margin: 4px 0;
-            font-size: 8.5pt;
-            background: #f5f5f5;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 8.5pt;
-            margin: 4px 0;
-        }
-        th {
-            border: 1px solid #000;
-            padding: 3px 5px;
-            background: #e0e0e0;
-            text-align: left;
-        }
-        td {
-            border: 1px solid #000;
-            padding: 3px 5px;
-        }
-        p { margin: 2px 0; color: #000; }
-        ul { margin: 3px 0; padding-left: 16px; color: #000; }
-        li { margin: 2px 0; }
+        @media print { @page { margin: 0.4in; } body { font-size: 9.5pt; } }
+        body { font-family: 'Courier New', monospace; max-width: 100%; margin: 0; padding: 12px; line-height: 1.35; font-size: 9.5pt; color: #000; background: #fff; }
+        h1 { text-align: center; font-size: 15pt; margin: 0 0 5px 0; border-bottom: 2px solid #000; padding-bottom: 4px; }
+        h2 { font-size: 11pt; margin: 10px 0 4px 0; border-bottom: 1px solid #000; padding-bottom: 2px; }
+        h3 { font-size: 10pt; margin: 6px 0 3px 0; text-decoration: underline; }
+        .columns { column-count: 2; column-gap: 20px; }
+        pre { background: #fff; border: 1px solid #000; padding: 6px; font-size: 8pt; margin: 4px 0; white-space: pre-wrap; break-inside: avoid; color: #000; }
+        .block { break-inside: avoid; margin-bottom: 10px; }
+        .note { border-left: 3px solid #000; padding: 3px 6px; margin: 4px 0; font-size: 8.5pt; }
+        .summary { border: 2px solid #000; padding: 8px; margin: 10px 0; break-inside: avoid; }
+        table { width: 100%; border-collapse: collapse; font-size: 8.5pt; margin: 4px 0; }
+        th { border: 1px solid #000; padding: 3px 5px; background: #e0e0e0; text-align: left; }
+        td { border: 1px solid #000; padding: 3px 5px; }
+        p { margin: 2px 0; } ul { margin: 3px 0; padding-left: 16px; } li { margin: 2px 0; }
     </style>
 </head>
 <body>
 
 <h1>HR Analytics — Lecture 1: Introduction</h1>
 <p style="text-align:center; font-size:9pt; margin-bottom:8px;">
-    Teacher's Notes · What is HR · What is Analytics · Four Types · Opening Example
+    What is HR · What is Analytics · Four Types of Analytics · Core Framework
 </p>
 
-<!-- ===== FORMAL DEFINITIONS ===== -->
+<!-- FORMAL DEFINITIONS -->
 <div style="border:2px solid #000; padding:8px; margin-bottom:10px;">
 <h2 style="margin-top:0; border-bottom:1px solid #000;">Formal Definitions</h2>
 <div style="column-count:2; column-gap:20px;">
@@ -157,23 +77,10 @@
 
 <div class="columns">
 
-<!-- ===== READING STACK ===== -->
+<!-- WHAT IS HR -->
 <div class="block">
-<h2>Reading Hierarchy</h2>
-<table>
-    <tr><th>Priority</th><th>Book</th><th>Use For</th></tr>
-    <tr><td>1st</td><td>Fitz-enz &amp; Mattox</td><td>Conceptual &amp; practical foundation</td></tr>
-    <tr><td>2nd</td><td>Wharton People Analytics</td><td>Modern MBA perspective</td></tr>
-    <tr><td>3rd</td><td>Gene Pease et al.</td><td>Deeper HR analytics</td></tr>
-    <tr><td>Syllabus</td><td>Yadav &amp; Maheshwari</td><td>University reference &amp; exam prep</td></tr>
-</table>
-<div class="note">Teaching philosophy: make students better managers and critical consumers of evidence — not memorizers of definitions. (Wharton model)</div>
-</div>
-
-<!-- ===== PART 1 — HR ===== -->
-<div class="block">
-<h2>Part 1 — What is HR? (5–10 min)</h2>
-<p><b>Definition:</b> Human Resources = people working within an organization + the systems/practices used to manage them.</p>
+<h2>What is HR?</h2>
+<p>Human Resources = people working within an organization + the systems and practices used to manage them.</p>
 <p><b>Key HR Activities:</b></p>
 <ul>
     <li>Recruitment &amp; Selection</li>
@@ -183,53 +90,47 @@
     <li>Promotion &amp; Retention</li>
     <li>Workforce Planning</li>
 </ul>
-<div class="ask">
-    ASK: "What decisions does an HR manager make on a daily basis?"<br>
-    → Let students generate the list on the board.<br>
-    THEN SAY: "Every one of these decisions can potentially involve data."
-</div>
-<div class="note">Do NOT lecture for 20 minutes on HR definitions. One question sets up the entire course.</div>
 </div>
 
-<!-- ===== PART 2 — ANALYTICS ===== -->
+<!-- CORE FRAMEWORK -->
 <div class="block">
-<h2>Part 2 — What is Analytics? (10 min)</h2>
-<p><b>Definition:</b> Systematic examination of data to discover useful patterns, relationships and insights that support decisions.</p>
+<h2>Core Framework</h2>
 <pre>DATA        → Raw facts and observations
 INFORMATION → Data organized to answer a basic question
 INSIGHT     → Something meaningful discovered through analysis
 DECISION    → Action taken based on the insight</pre>
-<div class="note">Write this on the board: DATA → INFORMATION → INSIGHT → DECISION. Return to this framework every lecture.</div>
+<div class="note">This framework applies to every HR analytics problem. Return to it throughout the course.</div>
 </div>
 
-<!-- ===== PART 3 — HR ANALYTICS ===== -->
+<!-- WHAT IS HR ANALYTICS -->
 <div class="block">
-<h2>Part 3 — HR Analytics Defined (10 min)</h2>
-<p><b>Teaching definition:</b> HR Analytics is the use of data and analytical methods to understand workforce-related issues and support better decisions about people and organizational performance.</p>
-<pre>It is NOT:   HR + Excel
-It is NOT:   HR + AI (technology is secondary)
-
-The key question is always:
-"What decision are we trying to improve?"</pre>
-<div class="note">Consistent with Wharton framing — using data to improve how people are managed.</div>
+<h2>What is HR Analytics?</h2>
+<p>HR Analytics is the use of data and analytical methods to understand workforce-related issues and support better decisions about people and organizational performance.</p>
+<pre>HR Analytics = DATA + ANALYSIS
+                    ↓
+             BETTER PEOPLE DECISIONS
+                    ↓
+          BETTER ORGANIZATIONAL OUTCOMES</pre>
 </div>
 
-<!-- ===== PART 4 — OPENING EXAMPLE ===== -->
+<!-- OPENING EXAMPLE -->
 <div class="block">
-<h2>Part 4 — The Opening Example (15 min)</h2>
-<pre>COMPANY X
-1,000 employees
-100 employees left</pre>
-<div class="ask">ASK: "What can we say?" → Students: 10% attrition.</div>
-<div class="ask">ASK: "Is 10% good or bad?" → They say bad.</div>
-<div class="ask">ASK: "Compared with what?"</div>
-<p><b>Teaching point:</b> 10% might be high in one industry, normal in another, low in another.</p>
-<div class="note">A number without context is often not an insight. This is your first analytics lesson — students remember it all semester.</div>
+<h2>The Opening Example</h2>
+<pre>Company X — 1,000 employees — 100 left
+
+Attrition Rate = 10%
+
+Is 10% good or bad?
+→ Depends on industry benchmark
+→ Depends on historical trend
+→ Depends on WHO is leaving
+
+A number without context is not an insight.</pre>
 </div>
 
-<!-- ===== PART 5 — PROGRESSION ===== -->
+<!-- DATA TO DECISION -->
 <div class="block">
-<h2>Part 5 — Data → Metric → Analytics (10 min)</h2>
+<h2>Data → Decision Progression</h2>
 <pre>DATA
 100 employees left.
         ↓
@@ -245,13 +146,11 @@ disproportionately high attrition.
         ↓
 DECISION
 Improve early-career retention programs.</pre>
-<div class="note">This is the entire philosophy of the course in one example. Write it on the board and leave it there.</div>
 </div>
 
-<!-- ===== PART 6 — FOUR TYPES ===== -->
+<!-- FOUR TYPES -->
 <div class="block">
-<h2>Part 6 — Four Types of Analytics (10 min)</h2>
-<p>Do NOT make them memorize names first. Ask the questions:</p>
+<h2>Four Types of Analytics</h2>
 <table>
     <tr><th>Question</th><th>Type</th></tr>
     <tr><td>What happened?</td><td>Descriptive Analytics</td></tr>
@@ -259,78 +158,14 @@ Improve early-career retention programs.</pre>
     <tr><td>What is likely to happen?</td><td>Predictive Analytics</td></tr>
     <tr><td>What should we do?</td><td>Prescriptive Analytics</td></tr>
 </table>
-<div class="note">Most HR departments today are still at descriptive level (headcount reports, turnover %). Goal of this course: move toward diagnostic and predictive.</div>
+<div class="note">Most HR departments today operate at the descriptive level. The goal of this course is to move toward diagnostic and predictive.</div>
 </div>
 
-<!-- ===== BOARD SUMMARY ===== -->
+<!-- BOOK REFERENCES -->
 <div class="block">
-<h2>What to Write on the Board</h2>
-<pre>         HR ANALYTICS
-
-HR = PEOPLE + HR PRACTICES
-
-ANALYTICS
-= systematic analysis of data
-  to generate useful insights
-  for decision making
-
-DATA → INFORMATION → INSIGHT → DECISION
-
-HR ANALYTICS = DATA + ANALYSIS
-                    ↓
-             BETTER PEOPLE DECISIONS
-                    ↓
-          BETTER ORGANIZATIONAL OUTCOMES
-
-4 QUESTIONS
-WHAT happened?      → DESCRIPTIVE
-WHY did it happen?  → DIAGNOSTIC
-WHAT may happen?    → PREDICTIVE
-WHAT should we do?  → PRESCRIPTIVE</pre>
-</div>
-
-<!-- ===== OPENING ACTIVITY ===== -->
-<div class="block">
-<h2>Opening Activity (10 min)</h2>
-<div class="box">
-    Scenario: "You are the HR Manager of a company with 500 employees. Your CEO walks in and says: 'Our best people are leaving. Fix it.' What is the first thing you do?"<br><br>
-    Pairs discuss 3 min → share with class.
-</div>
-<div class="note">Purpose: show that before any analysis, you must define the problem. This is Step 1 of every analytics project.</div>
-</div>
-
-<!-- ===== QUESTIONS FOR MBA ===== -->
-<div class="block">
-<h2>Questions to Ask MBA Students</h2>
-<ul>
-    <li>"Can you think of an HR decision in your organization made without data? What was the outcome?"</li>
-    <li>"What is the difference between an HR report and HR analytics?"</li>
-    <li>"Why do you think most companies are still at the descriptive level?"</li>
-</ul>
-</div>
-
-<!-- ===== STUDENT NOTES ===== -->
-<div class="block">
-<h2>Student Notes (Exam Version)</h2>
-<pre>HR Analytics = use of data and analytical methods
-to understand workforce issues and support better
-HR decisions.
-
-Four Types:
-1. Descriptive  — What happened?
-2. Diagnostic   — Why did it happen?
-3. Predictive   — What will happen?
-4. Prescriptive — What should we do?
-
-Key framework:
-DATA → INFORMATION → INSIGHT → DECISION</pre>
-</div>
-
-<!-- ===== BOOK CONNECTIONS ===== -->
-<div class="block">
-<h2>Book Connections</h2>
+<h2>Recommended Reading</h2>
 <table>
-    <tr><th>Point in Class</th><th>Read More</th></tr>
+    <tr><th>Topic</th><th>Source</th></tr>
     <tr><td>HR Analytics definition</td><td>Yadav &amp; Maheshwari, Ch. 1</td></tr>
     <tr><td>Business problem → decision</td><td>Fitz-enz &amp; Mattox, Intro</td></tr>
     <tr><td>Four types of analytics</td><td>Yadav &amp; Maheshwari, Ch. 1</td></tr>
@@ -339,6 +174,33 @@ DATA → INFORMATION → INSIGHT → DECISION</pre>
 </div>
 
 </div><!-- end columns -->
+
+<!-- KEY SUMMARY -->
+<div class="summary">
+<h2 style="margin-top:0; border-bottom:1px solid #000;">Lecture 1 — Key Summary</h2>
+<div style="column-count:2; column-gap:20px;">
+<div>
+<pre>HR Analytics = use of data and analytical methods
+to understand workforce issues and support better
+HR decisions.
+
+Four Types:
+1. Descriptive  — What happened?
+2. Diagnostic   — Why did it happen?
+3. Predictive   — What will happen?
+4. Prescriptive — What should we do?</pre>
+</div>
+<div>
+<pre>Core Framework:
+DATA → INFORMATION → INSIGHT → DECISION
+
+Key Principle:
+A number without context is not an insight.
+Every finding needs a benchmark, trend, or target
+before it can support a decision.</pre>
+</div>
+</div>
+</div>
 
 </body>
 </html>
