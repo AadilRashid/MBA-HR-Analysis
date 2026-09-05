@@ -100,4 +100,4 @@ A fictional technology company with **500 employees** used throughout the entire
 
 ---
 
-*For queries contact the course instructor.*
+*For queries contact email me at aadilrasheedbhat@gmail.com.*
