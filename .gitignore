@@ -1,6 +1,12 @@
 # Ignore book PDFs (too large for GitHub)
 books/
 
+# Instructor answer keys — private, never push
+answers/
+
+# Teacher notes — private, never push
+lecuters/*_Teacher_Notes.md
+
 # System files
 .DS_Store
 Thumbs.db
