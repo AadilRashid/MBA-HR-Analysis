@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HR Analytics — Exercise 02</title>
+    <style>
+        @media print { @page { margin: 0.4in; } body { font-size: 9.5pt; } }
+        body { font-family: 'Courier New', monospace; max-width: 100%; margin: 0; padding: 12px; line-height: 1.35; font-size: 9.5pt; color: #000; background: #fff; }
+        h1 { text-align: center; font-size: 15pt; margin: 0 0 5px 0; border-bottom: 2px solid #000; padding-bottom: 4px; }
+        h2 { font-size: 11pt; margin: 10px 0 4px 0; border-bottom: 1px solid #000; padding-bottom: 2px; }
+        .columns { column-count: 2; column-gap: 20px; }
+        .block { break-inside: avoid; margin-bottom: 10px; }
+        .note { border-left: 3px solid #000; padding: 3px 6px; margin: 4px 0; font-size: 8.5pt; }
+        .answer { border: 1px dashed #000; min-height: 35px; padding: 5px; margin: 4px 0; font-size: 8pt; }
+        pre { background: #fff; border: 1px solid #000; padding: 6px; font-size: 8pt; margin: 4px 0; white-space: pre-wrap; break-inside: avoid; }
+        table { width: 100%; border-collapse: collapse; font-size: 8.5pt; margin: 4px 0; }
+        th { border: 1px solid #000; padding: 3px 5px; background: #e0e0e0; text-align: left; }
+        td { border: 1px solid #000; padding: 3px 5px; }
+        p { margin: 2px 0; } ul { margin: 3px 0; padding-left: 16px; } li { margin: 2px 0; }
+    </style>
+</head>
+<body>
+<h1>HR Analytics — Exercise 02</h1>
+<p style="text-align:center; font-size:9pt; margin-bottom:4px;">Lecture 2 · HR Metrics · KashmirTech Dataset · Student Name: ___________________________</p>
+<div class="note" style="margin-bottom:8px;">Open KashmirTech_Dataset.csv in Excel to answer the following questions.</div>
+
+<div class="columns">
+
+<div class="block">
+<h2>Q1. Headcount Analysis</h2>
+<p>Using the dataset, calculate the number of employees in each department.</p>
+<table>
+    <tr><th>Department</th><th>Headcount</th><th>% of Total</th></tr>
+    <tr><td>Sales</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>IT</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>HR</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Finance</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Operations</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td><b>Total</b></td><td><b>500</b></td><td><b>100%</b></td></tr>
+</table>
+</div>
+
+<div class="block">
+<h2>Q2. Attrition Rate</h2>
+<p>(a) Calculate the overall attrition rate for KashmirTech.</p>
+<pre>Attrition Rate =
+  (Employees who left / Total employees) × 100
+
+Your calculation:
+  Employees who left (Attrition=Yes) = ______
+  Total employees                    = 500
+  Attrition Rate                     = ______%</pre>
+<p>(b) Calculate attrition rate by department:</p>
+<table>
+    <tr><th>Department</th><th>Left</th><th>Total</th><th>Rate %</th></tr>
+    <tr><td>Sales</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>IT</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>HR</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Finance</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Operations</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+</div>
+
+<div class="block">
+<h2>Q3. Salary Analysis</h2>
+<p>Calculate the following salary metrics:</p>
+<table>
+    <tr><th>Metric</th><th>Value (INR)</th></tr>
+    <tr><td>Average salary (all employees)</td><td>&nbsp;</td></tr>
+    <tr><td>Average salary — Junior level</td><td>&nbsp;</td></tr>
+    <tr><td>Average salary — Mid level</td><td>&nbsp;</td></tr>
+    <tr><td>Average salary — Senior level</td><td>&nbsp;</td></tr>
+    <tr><td>Average salary — Manager level</td><td>&nbsp;</td></tr>
+    <tr><td>Highest salary in dataset</td><td>&nbsp;</td></tr>
+    <tr><td>Lowest salary in dataset</td><td>&nbsp;</td></tr>
+</table>
+</div>
+
+<div class="block">
+<h2>Q4. Context &amp; Benchmarking</h2>
+<p>You calculated the overall attrition rate in Q2. Now answer:</p>
+<p>(a) Is this rate good or bad? What benchmark would you need to answer this properly?</p>
+<div class="answer">&nbsp;<br>&nbsp;<br>&nbsp;</div>
+<p>(b) Which department has the most concerning attrition? Why?</p>
+<div class="answer">&nbsp;<br>&nbsp;<br>&nbsp;</div>
+<p>(c) What additional data would help you explain the difference in attrition between departments?</p>
+<div class="answer">&nbsp;<br>&nbsp;<br>&nbsp;</div>
+</div>
+
+<div class="block">
+<h2>Q5. Metric Formulas</h2>
+<p>Write the formula and calculate where possible:</p>
+<p>(a) If KashmirTech spent Rs. 45,00,000 on recruitment and made 60 hires, what is the Cost per Hire?</p>
+<div class="answer">&nbsp;<br>&nbsp;</div>
+<p>(b) If total revenue is Rs. 50 crore and total employees = 500, what is Revenue per Employee?</p>
+<div class="answer">&nbsp;<br>&nbsp;</div>
+<p>(c) If employees were absent 1,200 days out of 1,25,000 scheduled working days, what is the Absenteeism Rate?</p>
+<div class="answer">&nbsp;<br>&nbsp;</div>
+</div>
+
+<div class="block">
+<h2>Q6. Metrics vs. Analytics</h2>
+<p>Classify each statement as a Metric (M) or Analytics insight (A):</p>
+<table>
+    <tr><th>Statement</th><th>M or A</th></tr>
+    <tr><td>Our attrition rate is 18%</td><td>&nbsp;</td></tr>
+    <tr><td>Employees who work overtime are 3x more likely to leave</td><td>&nbsp;</td></tr>
+    <tr><td>Average tenure is 4.2 years</td><td>&nbsp;</td></tr>
+    <tr><td>Low job satisfaction predicts attrition 6 months in advance</td><td>&nbsp;</td></tr>
+    <tr><td>We hired 80 people this quarter</td><td>&nbsp;</td></tr>
+    <tr><td>Sales juniors with &lt;2 years tenure have 40% attrition</td><td>&nbsp;</td></tr>
+</table>
+</div>
+
+</div>
+</body>
+</html>
