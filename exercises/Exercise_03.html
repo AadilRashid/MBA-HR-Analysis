@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HR Analytics — Exercise 03</title>
+    <style>
+        @media print { @page { margin: 0.4in; } body { font-size: 9.5pt; } }
+        body { font-family: 'Courier New', monospace; max-width: 100%; margin: 0; padding: 12px; line-height: 1.35; font-size: 9.5pt; color: #000; background: #fff; }
+        h1 { text-align: center; font-size: 15pt; margin: 0 0 5px 0; border-bottom: 2px solid #000; padding-bottom: 4px; }
+        h2 { font-size: 11pt; margin: 10px 0 4px 0; border-bottom: 1px solid #000; padding-bottom: 2px; }
+        .columns { column-count: 2; column-gap: 20px; }
+        .block { break-inside: avoid; margin-bottom: 10px; }
+        .note { border-left: 3px solid #000; padding: 3px 6px; margin: 4px 0; font-size: 8.5pt; }
+        .answer { border: 1px dashed #000; min-height: 40px; padding: 5px; margin: 4px 0; font-size: 8pt; }
+        pre { background: #fff; border: 1px solid #000; padding: 6px; font-size: 8pt; margin: 4px 0; white-space: pre-wrap; break-inside: avoid; }
+        table { width: 100%; border-collapse: collapse; font-size: 8.5pt; margin: 4px 0; }
+        th { border: 1px solid #000; padding: 3px 5px; background: #e0e0e0; text-align: left; }
+        td { border: 1px solid #000; padding: 3px 5px; }
+        p { margin: 2px 0; } ul { margin: 3px 0; padding-left: 16px; } li { margin: 2px 0; }
+    </style>
+</head>
+<body>
+<h1>HR Analytics — Exercise 03</h1>
+<p style="text-align:center; font-size:9pt; margin-bottom:4px;">Lecture 3 · Descriptive Analytics · KashmirTech Dataset · Student Name: ___________________________</p>
+<div class="note" style="margin-bottom:8px;">Open KashmirTech_Dataset.csv in Excel. Use Pivot Tables and formulas to answer all questions.</div>
+
+<div class="columns">
+
+<div class="block">
+<h2>Q1. Workforce Profile</h2>
+<p>Complete the KashmirTech workforce profile using the dataset:</p>
+<table>
+    <tr><th>Measure</th><th>Value</th><th>Excel Formula Used</th></tr>
+    <tr><td>Total headcount</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Number of departments</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Average age</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Average tenure (years)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Mean salary (INR)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Median salary (INR)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>% employees on overtime</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>% promoted last 2 years</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+</div>
+
+<div class="block">
+<h2>Q2. Mean vs. Median</h2>
+<p>(a) You calculated mean and median salary in Q1. Are they different? Why?</p>
+<div class="answer">&nbsp;<br>&nbsp;<br>&nbsp;</div>
+<p>(b) Which figure — mean or median — better represents the typical KashmirTech employee's salary? Explain your reasoning.</p>
+<div class="answer">&nbsp;<br>&nbsp;<br>&nbsp;</div>
+<p>(c) In what situation would the mean and median salary be almost equal?</p>
+<div class="answer">&nbsp;<br>&nbsp;</div>
+</div>
+
+<div class="block">
+<h2>Q3. Pivot Table — Attrition Breakdown</h2>
+<p>Build a Pivot Table with Department in Rows, Attrition (Yes/No) in Columns, and COUNT of Employee_ID as Values. Fill in the results:</p>
+<table>
+    <tr><th>Department</th><th>Attrition: No</th><th>Attrition: Yes</th><th>Total</th><th>Attrition %</th></tr>
+    <tr><td>Sales</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>IT</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>HR</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Finance</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Operations</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+<p style="margin-top:4px;">Which department has the highest attrition? Which has the lowest?</p>
+<div class="answer">Highest: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lowest:</div>
+</div>
+
+<div class="block">
+<h2>Q4. Salary by Job Level</h2>
+<p>Using AVERAGEIF or a Pivot Table, calculate average salary by job level:</p>
+<table>
+    <tr><th>Job Level</th><th>Avg Salary (INR)</th><th>Min Salary</th><th>Max Salary</th></tr>
+    <tr><td>Junior</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Mid</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Senior</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Manager</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+<p style="margin-top:4px;">What does the salary progression tell you about KashmirTech's compensation structure?</p>
+<div class="answer">&nbsp;<br>&nbsp;<br>&nbsp;</div>
+</div>
+
+<div class="block">
+<h2>Q5. Performance &amp; Satisfaction Distribution</h2>
+<p>(a) Using COUNTIF, count how many employees have each Performance Rating:</p>
+<table>
+    <tr><th>Rating</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    <tr><td>Count</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>%</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+<p style="margin-top:4px;">(b) Do the same for Job Satisfaction:</p>
+<table>
+    <tr><th>Rating</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+    <tr><td>Count</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>%</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+<p style="margin-top:4px;">(c) What concerns, if any, do these distributions raise?</p>
+<div class="answer">&nbsp;<br>&nbsp;<br>&nbsp;</div>
+</div>
+
+<div class="block">
+<h2>Q6. From Description to Question</h2>
+<p>Descriptive analytics raises questions that diagnostic analytics answers. For each finding below, write the analytical question it raises:</p>
+<table>
+    <tr><th>Descriptive Finding</th><th>Question It Raises</th></tr>
+    <tr><td>Sales has the highest attrition rate</td><td>&nbsp;<br>&nbsp;</td></tr>
+    <tr><td>Junior employees have the lowest average salary</td><td>&nbsp;<br>&nbsp;</td></tr>
+    <tr><td>30% of employees work overtime</td><td>&nbsp;<br>&nbsp;</td></tr>
+    <tr><td>Average job satisfaction = 3.1 out of 5</td><td>&nbsp;<br>&nbsp;</td></tr>
+</table>
+<p style="margin-top:4px;">Which of these findings concerns you most as an HR Manager? Why?</p>
+<div class="answer">&nbsp;<br>&nbsp;<br>&nbsp;</div>
+</div>
+
+</div>
+</body>
+</html>
